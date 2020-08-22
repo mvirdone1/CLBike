@@ -1,6 +1,7 @@
 javascript:(function() {
 
 
+
 var brandNames= ["specialized",
 "origin8",
 "diamond back",
@@ -48,7 +49,15 @@ var keyWords = ["downhill",
 keyColor = "#0AFF0A"; 
 
 
-var bikes = document.getElementsByClassName("result-title hdrlnk");
+if(window.location.href.includes("ksl"))
+{
+    var bikes = document.getElementsByClassName("item-info-title-link");
+}
+
+if(window.location.href.includes("craigslist"))
+{
+    var bikes = document.getElementsByClassName("result-title hdrlnk");
+}
     
 numBikes = bikes.length;
 
